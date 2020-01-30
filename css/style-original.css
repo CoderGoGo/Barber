@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.offset::before {
+  display: block;
+  content: '';
+  height: 5rem;
+  margin-top: -5rem;
+}
+
+#about-shop.offset {
+  box-shadow: 0 -25px 0 0 white, 0 10px 35px 1px black;
+}
+
+/* Navigation */
+
+.navbar {
+  display: block;
+  margin: 0;
+  float: left;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  transition: 340ms ease;
+  background: linear-gradient(#000 35%, #0000) !important;
+}
+
+.navbar .row {
+  padding: 0 100px;
+}
+
+.navbar.scrolled {
+  background: black !important;
+}
+
+.navbar-brand img {
+  height: 2rem;
+  filter: invert(100%);
+  transform: rotate(90deg);
+}
+
+.navbar li {
+  padding-right: 0.9rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #7b5540;
+}
+
+/* Landing area */
+
+.home-inner {
+  background-image: url(../image/razor/background.jpg);
+}
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+}
+
+.caption h1 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  text-shadow: 0.1rem 0.1rem 0.4rem black;
+}
+.caption h4 {
+  color: white;
+  text-transform: lowercase;
+  font-weight: 400;
+  padding-top: 0.7rem;
+}
+
+/* Buttons */
+
+.btn {
+  width: auto;
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  margin: 3.5rem 0 0;
+  text-decoration: none;
+  color: #ffffea !important;
+  background-color: #7b5540 !important;
+  font-size: 1.5rem;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background: #614230 !important;
+}
+
+.btn:active {
+  box-shadow: inset 0px 0px 12px 2px black;
+  border: none;
+}
+
+.btn-lg:active {
+  box-shadow: inset 0px 0px 12px 2px black;
+  border: none;
+}
+
+.btn-secondary {
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  background: #1d1d25 !important;
+}
+.btn-secondary:hover {
+  background: #1d1d25 !important;
+}
+
+/* About us */
+
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+
+#about-us {
+  margin-bottom: 0;
+  padding: 2rem 0 3.5rem;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.number {
+  font-size: 8rem;
+  letter-spacing: 0.6rem;
+}
+
+.other-color {
+  color: #7b5540;
+}
+
+h2.heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+  text-shadow: 1px 1px 3px;
+}
+
+#about-us .narrow::before {
+  content: '';
+  display: block;
+  background: url(../image/razor/razor.png);
+  background-size: 100%;
+  width: 320px;
+  height: 360px;
+  position: absolute;
+  top: 35px;
+  right: 75px;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 7rem 5rem;
+}
+
+/* Services */
+
+#services ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#services ul li span {
+  font-weight: bold;
+  color: black;
+  float: right;
+}
+
+#services ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: left;
+  text-align: left;
+  width: 100%;
+}
+
+#services ul li {
+  border-bottom: 1px dotted #727277;
+  padding: 0.9rem 0.4rem;
+  color: black;
+  font-size: 1.2rem;
+}
+
+#services .btn {
+  margin-bottom: 1rem;
+}
+
+/* Masters */
+
+#masters {
+  margin-bottom: -2rem;
+}
+
+#masters img {
+  width: 80%;
+}
+
+#masters blockquote {
+  font-size: 1.4rem;
+}
+
+#masters ol {
+  position: relative;
+}
+
+#masters ol li {
+  background-color: #7b5540;
+}
+
+#masters .btn-lg {
+  position: absolute;
+  bottom: 0;
+  right: 17%;
+}
+
+blockquote .svg-inline--fa {
+  margin: 1rem;
+  color: grey;
+}
+
+/* Contact */
+
+#contacts {
+  background: url(../image/razor/map.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px -5px 30px 1px;
+}
+
+#contacts .row {
+  padding-left: 205px;
+  padding-bottom: 105px;
+  font-size: 2rem;
+}
+
+#contacts .narrow {
+  padding-top: 50px;
+}
+/* Footer */
+
+footer {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0.34rem 0.5rem 0 0;
+  float: left;
+}
+
+footer socials {
+  margin: 0;
+  text-align: center;
+}
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #7b5540;
+}
+
+/* MEDIA QUERIES*/

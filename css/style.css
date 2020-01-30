@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.offset::before {
+  display: block;
+  content: '';
+  height: 5rem;
+}
+
+#about-shop.offset {
+  box-shadow: 0 -25px 0 0 white, 0 10px 35px 1px black;
+}
+
+/* Navigation */
+
+.navbar {
+  display: block;
+  margin: 0;
+  float: left;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  transition: 340ms ease;
+  background: linear-gradient(#000 35%, #0000) !important;
+}
+
+.navbar .row {
+  padding: 0;
+}
+.navbar.scrolled {
+  background: black !important;
+}
+
+.navbar-brand img {
+  height: 2rem;
+  filter: invert(100%);
+  transform: rotate(90deg);
+}
+
+.navbar li {
+  padding-right: 0.9rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #7b5540;
+}
+
+/* Landing area */
+
+.home-inner {
+  background-image: url(../image/razor/background.jpg);
+}
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 36%;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+}
+
+.caption h1 {
+  font-size: 2.3rem;
+  font-weight: 400;
+  text-shadow: 0.1rem 0.1rem 0.4rem black;
+}
+
+.caption h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-shadow: 0.1rem 0.1rem 0.4rem black;
+}
+
+.caption h4 {
+  font-size: 1rem;
+  color: white;
+  text-transform: lowercase;
+  font-weight: 400;
+  padding-top: 0.7rem;
+}
+
+/* Buttons */
+
+.btn {
+  width: auto;
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  margin: 5rem 0 0;
+  text-decoration: none;
+  color: #ffffff !important;
+  background-color: #7b5540 !important;
+  font-size: 1.2rem;
+  border-radius: 0;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background: #614230 !important;
+}
+
+.btn:active {
+  box-shadow: inset 0px 0px 12px 2px black;
+  border: none;
+}
+
+.btn-lg:active {
+  box-shadow: inset 0px 0px 12px 2px black;
+  border: none;
+}
+
+.btn-secondary {
+  border: none;
+  display: inline-block;
+  position: relative;
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  background: #1d1d25 !important;
+  margin-top: 1.5rem !important;
+  border-radius: 0;
+  margin: 1rem auto !important;
+}
+.btn-secondary:hover {
+  background: #1d1d25 !important;
+  text-decoration: none;
+}
+
+/* About us */
+
+.narrow {
+  width: 98%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+
+#about-us {
+  margin-bottom: 0;
+  padding: 1rem 0 1.5rem;
+  position: relative;
+  background-color: #ffffff;
+}
+
+#about-us .feature {
+  text-align: left !important;
+  margin: 0;
+}
+
+.number {
+  font-size: 11rem;
+  letter-spacing: 0.5rem;
+  text-align: center !important;
+  margin: 0;
+}
+
+.lead p {
+  margin: 0;
+}
+
+.other-color {
+  color: #7b5540;
+}
+
+h2.heading {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  /*    text-shadow: 1px 1px 3px;*/
+  text-align: center !important;
+}
+
+#about-us .narrow::before {
+  content: '';
+  display: none;
+  background: url(../image/razor/razor.png);
+  background-size: 100%;
+  width: 320px;
+  height: 360px;
+  position: absolute;
+  top: 35px;
+  right: 75px;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 4rem 1.1rem;
+}
+
+/* Services */
+
+#services ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#services ul li span {
+  font-weight: bold;
+  color: black;
+  float: right;
+}
+
+#services ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: left;
+  text-align: left;
+  width: 100%;
+}
+
+#services ul li {
+  border-bottom: 1px dotted #727277;
+  padding: 0.9rem 0.4rem;
+  color: black;
+  font-size: 1.2rem;
+}
+
+#services .btn {
+  margin-bottom: 1rem;
+}
+#services a {
+  margin-top: 3rem !important;
+}
+
+.hidden-sm,
+.hidden-md {
+  display: none;
+}
+
+/* Masters */
+
+#masters {
+  margin-bottom: -2rem;
+}
+
+#masters .jumbotron {
+  padding: 2.3rem 0 0;
+}
+
+#masters img {
+  width: 100%;
+}
+
+#masters blockquote {
+  font-size: 1rem;
+}
+
+#masters ol {
+  position: relative;
+}
+
+#masters ol li {
+  background-color: #7b5540;
+}
+
+#masters .btn-md {
+  margin: 0 auto;
+}
+
+blockquote .svg-inline--fa {
+  margin: 1rem;
+  color: grey;
+}
+
+#masters .carousel-item {
+  height: 745px;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Contact */
+
+#contacts {
+  box-shadow: 0px -5px 30px 1px;
+  margin-top: 5rem;
+}
+
+#contacts .row {
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  font-size: 1.4rem;
+}
+
+#contacts .narrow {
+  padding-top: 50px;
+}
+/* Footer */
+
+footer {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 1rem;
+}
+
+footer .socials {
+  margin: 0;
+  text-align: center;
+}
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #7b5540;
+}
+
+.phone {
+  color: dodgerblue;
+}
+
+/* Fixed */
+
+.row,
+.container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*--- Fix for Fixed Navbar jumping on scroll --*/
+.fixed-top {
+  -webkit-backface-visibility: hidden;
+}
+
+/*--- Fixed Landing Page Section --*/
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+  box-shadow: 0px 5px 30px 1px;
+}
+
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/*--- iOS Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../image/razor/desc.jpg);
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+#contacts .fixed {
+  position: relative;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  background-size: auto;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+#contacts .fixed-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+
+/* MEDIA QUERIES*/
+
+@media screen and (min-width: 500px) {
+  #masters .carousel-item {
+    overflow: hidden;
+    height: 70%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .narrow {
+    width: 80%;
+  }
+
+  .caption h1 {
+    font-size: 3rem;
+  }
+
+  .caption h2 {
+    font-size: 1.5rem;
+  }
+
+  .caption h4 {
+    font-size: 1.2rem;
+  }
+  .btn {
+    font-size: 1.5rem;
+  }
+
+  h2.heading {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    /*  text-shadow: 1px 1px 3px;*/
+    text-align: left !important;
+  }
+
+  .hidden-sm {
+    display: inline-block;
+  }
+  #masters .carousel-item {
+    overflow: hidden;
+    max-height: 700px;
+  }
+  #contacts .row {
+    padding-bottom: 4rem;
+    padding-left: 6rem;
+    font-size: 1.6rem;
+  }
+  #contacts .fixed {
+    background: url(../image/razor/map.png);
+    background-position: bottom right 20px;
+    background-size: cover;
+  }
+  footer .tag {
+    text-align: left;
+  }
+  footer .socials a {
+    position: relative;
+    right: -105px;
+    bottom: 45px;
+    margin: 0;
+    text-align: right;
+  }
+
+  footer {
+    padding-bottom: 0;
+    font-size: 1rem;
+  }
+  footer .row {
+    padding-top: 1.7rem;
+  }
+  #about-us .narrow::before {
+    display: block;
+    width: 200px;
+    height: 220px;
+    top: 40px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .narrow {
+    width: 80%;
+    padding-top: 1rem;
+  }
+  .caption h1 {
+    font-size: 4.5rem;
+  }
+
+  .caption h2 {
+    font-size: 2rem;
+  }
+
+  .caption h4 {
+    font-size: 1.6rem;
+  }
+  .btn {
+    font-size: 2rem;
+  }
+  .hidden-md {
+    display: block;
+  }
+  .number {
+    text-align: left !important;
+  }
+  #masters .carousel-item {
+    overflow: hidden;
+    max-height: 800px;
+  }
+  #masters blockquote {
+    font-size: 1.3rem;
+  }
+  .btn-secondary {
+    font-size: 1.5rem;
+  }
+  #about-shop .row {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+  #about-us .narrow::before {
+    width: 230px;
+    height: 260px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .narrow {
+    width: 75%;
+  }
+  #masters .carousel-item {
+    overflow: hidden;
+    max-height: 670px;
+  }
+  #masters blockquote {
+    font-size: 1.7rem;
+  }
+  #services ul li {
+    font-size: 1.6rem;
+  }
+  #about-shop .row {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+  #contacts .fixed {
+    background-position: center center;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  #masters .carousel-item {
+    overflow: hidden;
+    max-height: 670px;
+  }
+  #masters blockquote {
+    font-size: 2rem;
+  }
+  .lead h5 {
+    font-size: 1.5rem;
+  }
+  .feature {
+    font-size: 1.4rem;
+  }
+  #about-us .narrow::before {
+    width: 330px;
+    height: 360px;
+    top: 35px;
+    right: 75px;
+  }
+}
