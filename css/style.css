@@ -419,7 +419,184 @@ footer a:hover {
   z-index: -999 !important;
 }
 
-/* MEDIA QUERIES*/
+.form,
+.form .btn[type='submit'] {
+  margin-top: 42px;
+}
+
+.form {
+  margin-top: 55px;
+}
+
+.form .btn[type='submit'] {
+  padding: 13px 50px;
+}
+
+.form-group {
+  position: relative;
+  min-height: 54px;
+  font-size: 1.125rem;
+  width: 100%;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.form-control {
+  height: 54px;
+  width: 100%;
+  border: none;
+  outline: 0;
+  color: #002855;
+  font-size: 1.125rem;
+  padding-left: 15px;
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 54px;
+  overflow: hidden;
+  padding-top: 15px;
+  margin-bottom: -4px;
+}
+
+.form-group label {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #787878;
+}
+
+.form-group label::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  bottom: -1px;
+  border-bottom: 1px solid #002855;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+.form-control:focus + label::after,
+.form-control:not(:placeholder-shown) + label::after {
+  transform: translateX(0);
+}
+
+.form-control::placeholder {
+  transition: color 0.1s ease-out;
+}
+
+.form-control:focus::placeholder {
+  color: #c8c8c8;
+}
+
+.socials {
+  margin-top: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.linkedin {
+  display: block;
+  height: 32px;
+}
+
+/* Media queries */
+
+@media (max-width: 1800px) {
+  .form-control {
+    font-size: 1rem;
+  }
+
+  .form .btn[type='submit'] {
+    padding: 13px 38px;
+  }
+
+  .form-group,
+  textarea.form-control {
+    min-height: 50px;
+  }
+
+  .form-control {
+    height: 50px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .form-control {
+    font-size: 0.975rem;
+  }
+
+  .form .btn[type='submit'] {
+    padding: 12px 35px;
+  }
+
+  .form-group,
+  textarea.form-control {
+    min-height: 48px;
+  }
+
+  .form-control {
+    height: 48px;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .form .btn[type='submit'] {
+    padding: 12px 35px;
+  }
+
+  .form-group,
+  textarea.form-control {
+    min-height: 46px;
+  }
+
+  .form-control {
+    height: 46px;
+  }
+}
+@media (max-width: 991px) {
+  .socials {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 0 30px;
+  }
+
+  .form {
+    margin-top: 25px;
+  }
+
+  .form .btn[type='submit'] {
+    float: right;
+    margin-top: 30px;
+  }
+
+  .get-in-touch.default-section {
+    padding-bottom: 15px;
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .form .btn[type='submit'] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .form-control {
+    padding-left: 5px;
+    font-size: 0.875rem;
+    line-height: 1.4rem;
+  }
+}
 
 @media screen and (min-width: 500px) {
   #masters .carousel-item {
